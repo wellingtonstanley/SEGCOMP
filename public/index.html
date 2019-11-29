@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Diffie-Hellman chat</title>
+ <link rel="stylesheet" href="/assets/windows.css">
+ <link rel="stylesheet" href="/js/bootstrap/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div class="container" id="nick">
+
+ <span class="text-center">Fill your name:</span>
+ <form id="submit"><input type="text" class="form-control col-sm-3" id="nickname" /></form>
+
+</div>
+
+<div id="chat" hidden class="container bg-secondary">
+
+ <div class="menu form-text">
+ <div class="name form-text" id="name"><strong></strong></div>
+ <div class="last form-text" id="time"></div>
+ </div>
+
+ <ol class="chat">
+ </ol>
+    <div id="public_key" class="form-group">
+      <div id="public_key_msg" class="form-text"><i><strong>Insert the public key</<strong></i></div>
+      <div class="form-group col-6">
+        <input class="form-control" type="number" id="number_input" size="5">
+      </div>
+    </div>
+     <div id="message" class="form-group d-none">
+       <div id="message_msg" class="form-text" ><i><strong>Diffie Hellman</<strong></i></div>
+         <div class="form-group">
+           <textarea name="txtarea" placeholder="Insert the text" id="textarea" class="form-control" rows="3" cols="50"></textarea>
+         </div>
+     </div>
+
+</div>
+  <script src="/js/jquery/dist/jquery.min.js"></script>
+  <script src="/js/socket.io-client/dist/socket.io.js"></script>
+  <script src="/js/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/assets/js.js"></script>
+</body>
+</html>
