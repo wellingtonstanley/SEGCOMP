@@ -23,7 +23,7 @@
     "big-integer": "^1.6.48",
     "bootstrap": "^4.3.1",
     "ejs": "^2.7.4",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "jquery": "^3.4.1",
     "prime-number": "^0.2.2",
     "socket.io": "^2.3.0"
